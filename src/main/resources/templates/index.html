@@ -1,1 +1,139 @@
-Hello
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title})}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Quiz - Home</title>
+  </head>
+  <body>
+    <div id="content">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h1>Welcome to the Online Quiz App</h1>
+        <p>
+          Challenge yourself and learn new things with our wide range of
+          quizzes!
+        </p>
+        <a href="#" class="btn btn-dark btn-lg mt-3"
+          >Start a Quiz <i class="fas fa-arrow-right"></i
+        ></a>
+      </section>
+
+      <!-- Features Section -->
+      <section class="container my-5" id="feature">
+        <div class="text-center mb-4">
+          <h2>Why Choose Us?</h2>
+          <p>
+            Explore our unique features designed to enhance your learning
+            experience.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-card text-center">
+              <i class="fas fa-user-graduate fa-3x mb-3"></i>
+              <h4>Wide Range of Topics</h4>
+              <p>
+                Choose from numerous topics and improve your knowledge across
+                various domains.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card text-center">
+              <i class="fas fa-chart-line fa-3x mb-3"></i>
+              <h4>Track Your Progress</h4>
+              <p>
+                View your performance, track your scores, and strive for
+                improvement with every quiz.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card text-center">
+              <i class="fas fa-award fa-3x mb-3"></i>
+              <h4>Leaderboard</h4>
+              <p>
+                See how you rank against others. Compete, improve, and aim for
+                the top spot!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Quizzes Section -->
+      <section class="container my-5" id="quiz">
+        <div class="text-center mb-4">
+          <h2>Popular Quizzes</h2>
+          <p>Here are some of our most popular quizzes. Start one now!</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                th:src="@{/images/java.png}"
+                class="card-img-top"
+                alt="Java Quiz"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Java Quiz</h5>
+                <a href="#" class="btn btn-primary">Take Quiz</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                th:src="@{/images/react.png}"
+                class="card-img-top"
+                alt="SQL Quiz"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">React Quiz</h5>
+                <a href="#" class="btn btn-primary">Take Quiz</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                th:src="@{/images/dsa.png}"
+                class="card-img-top"
+                alt="Data Structure Quiz"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Data Structure & Algorithm Quiz</h5>
+                <a href="#" class="btn btn-primary">Take Quiz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="container my-5" id="testimonial">
+        <div class="text-center mb-4">
+          <h2>What Our Users Say</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="testimonial">
+              <p>
+                "This quiz app has helped me improve my knowledge and stay
+                competitive!"
+              </p>
+              <p class="text-end">- Kumar Prince</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="testimonial">
+              <p>"Great selection of quizzes! Love the leaderboard feature."</p>
+              <p class="text-end">- Vineet Dubey</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
