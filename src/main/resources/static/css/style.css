@@ -5,26 +5,32 @@ body {
 }
 
 /* Navbar styling */
-.navbar-brand {
-  font-size: 30px;
+.container .navbar-brand {
+  font-size: 35px;
   font-weight: bold;
-  color: #007bff;
+  color: white;
+  transition: color 0.3s;
 }
+.container .navbar-brand:hover {
+  color: black;
+  transition: color 0.3s;
+}
+
 #navbarNav {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
 }
 #navbarNav .nav-link {
-  color: #555;
+  color: white;
   transition: color 0.3s;
 }
 #navbarNav .nav-link:hover {
-  color: #007bff;
+  color: black;
 }
 
 /* Hero Section */
 .hero-section {
-  background-image: linear-gradient(135deg, #007bff 20%, #33aaff 80%);
+  background-image: linear-gradient(135deg, #007bff 30%, #33aaff 70%);
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -52,18 +58,22 @@ body {
 }
 
 /* Features Section */
-#feature, #quiz, #testimonial {
+#feature,
+#quiz,
+#testimonial {
   background-color: #ffffff;
   padding: 60px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-#feature h2, #quiz h2 {
+#feature h2,
+#quiz h2 {
   font-weight: 900;
   color: #333;
   font-size: 40px;
 }
-#feature p, #quiz p {
+#feature p,
+#quiz p {
   color: #555;
   font-weight: 700;
 }
@@ -129,5 +139,76 @@ body {
 }
 .testimonial .text-end {
   color: #007bff;
+  font-weight: bold;
+}
+
+/* Leaderboard */
+.leaderboard-container {
+  max-width: 700px;
+  margin: 90px auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-item:last-child {
+  border-bottom: none;
+}
+
+.rank-badge {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.rank-1 {
+  background-color: #ffd700;
+}
+.rank-2 {
+  background-color: #c0c0c0;
+}
+.rank-3 {
+  background-color: #cd7f32;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 15px;
+}
+
+.username {
+  font-weight: bold;
+  margin-left: 15px;
+  flex-grow: 1;
+}
+
+.score {
+  font-size: 1.2rem;
+  color: #333;
   font-weight: bold;
 }

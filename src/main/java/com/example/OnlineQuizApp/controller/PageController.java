@@ -18,4 +18,10 @@ public class PageController {
         model.addAttribute("title", "Home");
         return "index";
     }
+
+    @RequestMapping("/leaderboard")
+    public String leaderboard(Model model) {
+        model.addAttribute("title", "Leaderboard");
+        return "leaderboard";
+    }
 }

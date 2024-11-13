@@ -1,7 +1,12 @@
-<!-- templates/common/header.html -->
-<nav class="navbar navbar-expand-lg bg-light fixed-top" th:fragment="navbar">
+<!-- Navbar Code -->
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top" th:fragment="navbar">
   <div class="container">
-    <a class="navbar-brand" th:href="@{/}"> <i class="fas fa-graduation-cap"></i>Online Quiz App</a>
+    <!-- Brand Logo -->
+    <a class="navbar-brand" th:href="@{/}">
+      <i class="fas fa-graduation-cap"></i> Online Quiz App
+    </a>
+
+    <!-- Toggle Button for Mobile View -->
     <button
       class="navbar-toggler"
       type="button"
@@ -13,22 +18,34 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Navbar Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" th:href="@{/home}"><i class="fas fa-home"></i>Home</a>
+          <a class="nav-link" th:href="@{/home}">
+            <i class="fas fa-home"></i> Home
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:href="@{/quizzes}"><i class="fas fa-question-circle"></i>Quizzes</a>
+          <a class="nav-link" th:href="@{/quizzes}">
+            <i class="fas fa-question-circle"></i> Quizzes
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:href="@{/leaderboard}"><i class="fas fa-trophy"></i>Leaderboard</a>
+          <a class="nav-link" th:href="@{/leaderboard}">
+            <i class="fas fa-trophy"></i> Leaderboard
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:href="@{/login}"><i class="fas fa-sign-in-alt"></i>Login</a>
+          <a class="nav-link" th:href="@{/auth/login}">
+            <i class="fas fa-sign-in-alt"></i> Login
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:href="@{/register}"><i class="fas fa-user-plus"></i>Register</a>
+          <a class="nav-link" th:href="@{/register}">
+            <i class="fas fa-user-plus"></i> Register
+          </a>
         </li>
       </ul>
     </div>
