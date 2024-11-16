@@ -1,11 +1,187 @@
 <!DOCTYPE html>
 <html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title})}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Quiz - About</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main class="py-16 px-4 max-w-7xl mx-auto" id="content">
+      <!-- Title Section -->
+      <section class="text-center mb-16 mt-3">
+        <h2 class="text-4xl font-extrabold text-gray-800 dark:text-white mb-4">
+          About Us
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300">
+          We are dedicated to providing a seamless and interactive learning
+          experience through quizzes. Our mission is to empower individuals to
+          enhance their knowledge and test their skills in a fun and engaging
+          way.
+        </p>
+      </section>
+
+      <!-- Mission and Vision -->
+      <section class="mb-16 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div
+            class="space-y-4 bg-gray-200 dark:bg-gray-500 rounded p-4 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+              Our Mission
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Our mission is to make learning more engaging through interactive
+              quizzes, helping users to improve their knowledge in various
+              subjects. We strive to make learning accessible and enjoyable.
+            </p>
+          </div>
+          <div
+            class="space-y-4 bg-gray-200 dark:bg-gray-500 rounded p-4 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+              Our Vision
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              We envision a world where quizzes help people learn and grow, by
+              providing them with the tools to test their knowledge in a fun and
+              interactive way. We aim to inspire continuous learning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Values Section -->
+      <section class="mb-16 mt-6">
+        <h3
+          class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-8"
+        >
+          Our Core Values
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Value 1 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transform transition-transform duration-300"
+          >
+            <h4
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-4"
+            >
+              Innovation
+            </h4>
+            <p class="text-gray-600 dark:text-gray-300">
+              We strive to innovate and improve our learning experiences by
+              constantly evolving our platform.
+            </p>
+          </div>
+          <!-- Value 2 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transform transition-transform duration-300"
+          >
+            <h4
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-4"
+            >
+              Integrity
+            </h4>
+            <p class="text-gray-600 dark:text-gray-300">
+              We operate with integrity, ensuring that every quiz is fair,
+              honest, and aligned with our mission to promote knowledge.
+            </p>
+          </div>
+          <!-- Value 3 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transform transition-transform duration-300"
+          >
+            <h4
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-4"
+            >
+              Community
+            </h4>
+            <p class="text-gray-600 dark:text-gray-300">
+              We believe in building a supportive community of learners, where
+              people can share their knowledge and grow together.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Members Section -->
+      <section class="mb-16 mt-6">
+        <h3
+          class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-8"
+        >
+          Meet Our Team
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Team Member 1 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition-transform duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Team Member"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-semibold text-gray-800 dark:text-white">
+                John Doe
+              </h4>
+              <p class="text-gray-600 dark:text-gray-300">CEO & Founder</p>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition-transform duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Team Member"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-semibold text-gray-800 dark:text-white">
+                Jane Smith
+              </h4>
+              <p class="text-gray-600 dark:text-gray-300">Lead Developer</p>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition-transform duration-300"
+          >
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Team Member"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-semibold text-gray-800 dark:text-white">
+                Alice Johnson
+              </h4>
+              <p class="text-gray-600 dark:text-gray-300">Product Manager</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Information Section -->
+      <section class="text-center my-16 mt-8">
+        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
+          Get In Touch
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-8">
+          Feel free to reach out to us for any inquiries or suggestions. We're
+          here to help!
+        </p>
+        <a
+          href="mailto:kumarprince.s06@gmail.com"
+          class="inline-block bg-gray-300 text-black py-2 px-6 rounded-full dark:bg-gray-500 dark:text-white hover:bg-gray-700 hover:text-white transition-all duration-300"
+        >
+          Contact Us
+        </a>
+      </section>
+    </main>
+  </body>
 </html>

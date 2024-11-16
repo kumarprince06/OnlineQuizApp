@@ -18,7 +18,16 @@ public class PageController {
         model.addAttribute("title", "Home");
         return "index";
     }
-
+    @RequestMapping("/about")
+    public String about(Model model) {
+        model.addAttribute("title", "About");
+        return "about";
+    }
+    @RequestMapping("/contact")
+    public String contact(Model model) {
+        model.addAttribute("title", "Contact");
+        return "contact";
+    }
     @RequestMapping("/leaderboard")
     public String leaderboard(Model model) {
         model.addAttribute("title", "Leaderboard");

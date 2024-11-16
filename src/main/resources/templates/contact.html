@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title})}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Quiz - Contact Us</title>
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main class="py-16 px-4 max-w-7xl mx-auto" id="content">
+      <!-- Title Section -->
+      <section class="text-center mb-16 mt-3">
+        <h2 class="text-4xl font-extrabold text-gray-800 dark:text-white mb-4">
+          Contact Us
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300">
+          We are here to help! Get in touch with us for any questions, feedback, or support.
+        </p>
+      </section>
+
+      <!-- Contact Information -->
+      <section class="mb-16 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="space-y-4 bg-gray-200 dark:bg-gray-500 rounded p-4">
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+              Our Office
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              123 Learning Lane, Knowledge City, 45678
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              <strong>Phone:</strong> +1 234 567 8900
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              <strong>Email:</strong> info@onlinequiz.com
+            </p>
+          </div>
+          <div class="space-y-4 bg-gray-200 dark:bg-gray-500 rounded p-4">
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+              Business Hours
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Monday - Friday: 9 AM - 6 PM
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              Saturday: 10 AM - 4 PM
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="mb-16 mt-6">
+        <h3 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-8">
+          Send Us a Message
+        </h3>
+        <form action="#" method="POST" class="max-w-lg mx-auto space-y-6">
+          <div>
+            <label for="name" class="block text-gray-700 dark:text-gray-300 text-sm font-semibold">
+              Your Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="mt-2 p-3 w-full border rounded-md text-gray-700 dark:bg-gray-800 dark:text-white dark:border-gray-600 focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 dark:text-gray-300 text-sm font-semibold">
+              Your Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="mt-2 p-3 w-full border rounded-md text-gray-700 dark:bg-gray-800 dark:text-white dark:border-gray-600 focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700 dark:text-gray-300 text-sm font-semibold">
+              Your Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="4"
+              class="mt-2 p-3 w-full border rounded-md text-gray-700 dark:bg-gray-800 dark:text-white dark:border-gray-600 focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-700 transition duration-200"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Social Media Links -->
+      <section class="text-center my-16 mt-6">
+        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
+          Follow Us
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-8">
+          Stay connected with us through our social media channels.
+        </p>
+        <div class="flex justify-center gap-6">
+          <a href="https://www.facebook.com/onlinequiz" target="_blank" class="text-blue-400 text-3xl hover:text-blue-800 transition duration-200">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/onlinequiz" target="_blank" class="text-blue-400 text-3xl hover:text-blue-600 transition duration-200">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/kumar_prince06" target="_blank" class="text-blue-400 text-3xl hover:text-pink-900 transition duration-200">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kumarprince06" target="_blank" class="text-blue-400 text-3xl hover:text-blue-800 transition duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
