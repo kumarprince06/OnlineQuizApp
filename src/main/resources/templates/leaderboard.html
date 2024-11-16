@@ -4,80 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Quiz - Leaderboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body >
     <!-- Leaderboard Container -->
-    <div class="leaderboard-container" id="content">
-      <div class="leaderboard-header">
-        <h2>Leaderboard</h2>
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg my-8 dark:bg-gray-700" id="content">
+      <div class="text-center mb-8 p-4 bg-gray-600 dark:bg-gray-800 text-white rounded">
+        <h2 class="text-3xl font-semibold text-indigo-600">Leaderboard</h2>
       </div>
 
       <!-- Leaderboard Items -->
-      <div class="leaderboard-item">
-        <div class="rank-badge rank-1">1</div>
-        <img
-          src="https://via.placeholder.com/50"
-          alt="User 1"
-          class="profile-pic"
-        />
-        <div class="username">User 1</div>
-        <div class="score">980 pts</div>
-      </div>
+      <div class="space-y-4">
+        <!-- User 1 -->
+        <div class="flex items-center p-4 rounded border-b border-gray-200 hover:bg-gray-50">
+          <div class="flex items-center justify-center w-12 h-12 bg-yellow-400 text-white rounded-full font-bold">
+            1
+          </div>
+          <img
+            src="https://via.placeholder.com/50"
+            alt="User 1"
+            class="w-12 h-12 rounded-full object-cover mx-4"
+          />
+          <div class="flex-1">
+            <div class="font-semibold text-gray-800">User 1</div>
+          </div>
+          <div class="font-bold text-green-500">980 pts</div>
+        </div>
 
-      <div class="leaderboard-item">
-        <div class="rank-badge rank-2">2</div>
-        <img
-          src="https://via.placeholder.com/50"
-          alt="User 2"
-          class="profile-pic"
-        />
-        <div class="username">User 2</div>
-        <div class="score">920 pts</div>
-      </div>
+        <!-- User 2 -->
+        <div class="flex items-center p-4 border-b rounded border-gray-200 hover:bg-gray-50">
+          <div class="flex items-center justify-center w-12 h-12 bg-gray-400 text-white rounded-full font-bold">
+            2
+          </div>
+          <img
+            src="https://via.placeholder.com/50"
+            alt="User 2"
+            class="w-12 h-12 rounded-full object-cover mx-4"
+          />
+          <div class="flex-1">
+            <div class="font-semibold text-gray-800">User 2</div>
+          </div>
+          <div class="font-bold text-green-500">920 pts</div>
+        </div>
 
-      <div class="leaderboard-item">
-        <div class="rank-badge rank-3">3</div>
-        <img
-          src="https://via.placeholder.com/50"
-          alt="User 3"
-          class="profile-pic"
-        />
-        <div class="username">User 3</div>
-        <div class="score">880 pts</div>
-      </div>
+        <!-- User 3 -->
+        <div class="flex items-center p-4 border-b rounded border-gray-200 hover:bg-gray-50">
+          <div class="flex items-center justify-center w-12 h-12 bg-orange-500 text-white rounded-full font-bold">
+            3
+          </div>
+          <img
+            src="https://via.placeholder.com/50"
+            alt="User 3"
+            class="w-12 h-12 rounded-full object-cover mx-4"
+          />
+          <div class="flex-1">
+            <div class="font-semibold text-gray-800">User 3</div>
+          </div>
+          <div class="font-bold text-green-500">880 pts</div>
+        </div>
 
-      <!-- Additional Users -->
-      <div class="leaderboard-item">
-        <div class="rank-badge">4</div>
-        <img
-          src="https://via.placeholder.com/50"
-          alt="User 4"
-          class="profile-pic"
-        />
-        <div class="username">User 4</div>
-        <div class="score">850 pts</div>
-      </div>
+        <!-- Additional Users -->
+        <div class="flex items-center p-4 rounded border-b border-gray-200 hover:bg-gray-50">
+          <div class="flex items-center justify-center w-12 h-12 text-gray-700 bg-gray-300 rounded-full font-bold">
+            4
+          </div>
+          <img
+            src="https://via.placeholder.com/50"
+            alt="User 4"
+            class="w-12 h-12 rounded-full object-cover mx-4"
+          />
+          <div class="flex-1">
+            <div class="font-semibold text-gray-800">User 4</div>
+          </div>
+          <div class="font-bold text-green-500">850 pts</div>
+        </div>
 
-      <div class="leaderboard-item">
-        <div class="rank-badge">5</div>
-        <img
-          src="https://via.placeholder.com/50"
-          alt="User 5"
-          class="profile-pic"
-        />
-        <div class="username">User 5</div>
-        <div class="score">820 pts</div>
-      </div>
+        <div class="flex items-center p-4 rounded border-b border-gray-200 hover:bg-gray-50">
+          <div class="flex items-center justify-center w-12 h-12 text-gray-700 bg-gray-300 rounded-full font-bold">
+            5
+          </div>
+          <img
+            src="https://via.placeholder.com/50"
+            alt="User 5"
+            class="w-12 h-12 rounded-full object-cover mx-4"
+          />
+          <div class="flex-1">
+            <div class="font-semibold text-gray-800">User 5</div>
+          </div>
+          <div class="font-bold text-green-500">820 pts</div>
+        </div>
 
-      <div class="leaderboard-item">
-        <div class="rank-badge">6</div>
-        <img
-          src="https://via.placeholder.com/50"
-          alt="User 6"
-          class="profile-pic"
-        />
-        <div class="username">User 6</div>
-        <div class="score">790 pts</div>
+        <div class="flex items-center rounded p-4 hover:bg-gray-50">
+          <div class="flex items-center justify-center w-12 h-12 text-gray-700 bg-gray-300 rounded-full font-bold">
+            6
+          </div>
+          <img
+            src="https://via.placeholder.com/50"
+            alt="User 6"
+            class="w-12 h-12 rounded-full object-cover mx-4"
+          />
+          <div class="flex-1">
+            <div class="font-semibold text-gray-800">User 6</div>
+          </div>
+          <div class="font-bold text-green-500">790 pts</div>
+        </div>
       </div>
     </div>
   </body>
