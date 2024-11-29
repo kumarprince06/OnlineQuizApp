@@ -76,10 +76,10 @@
 
       <a
         type="button"
-        th:href="@{/auth/login}"
+        th:href="@{/login}"
         class="text-white bg-gray-700 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
-      Login <i class="fa-solid fa-right-to-bracket"></i> 
+        Login <i class="fa-solid fa-right-to-bracket"></i>
       </a>
       <button
         data-collapse-toggle="navbar-cta"
@@ -122,6 +122,14 @@
             th:classappend="${page == 'home'} ? 'text-blue-700 md:dark:text-blue-500' : 'text-gray-900 dark:text-white'"
             class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent dark:hover:bg-gray-700 md:dark:hover:text-white"
             ><i class="fa-solid fa-house"></i> Home</a
+          >
+        </li>
+        <li>
+          <a
+            th:href="@{/quiz}"
+            th:classappend="${page == 'quiz'} ? 'text-blue-700 md:dark:text-blue-500' : 'text-gray-900 dark:text-white'"
+            class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent dark:hover:bg-gray-700 md:dark:hover:text-white"
+            ><i class="fa fa-question-circle" aria-hidden="true"></i> Quiz</a
           >
         </li>
         <li>
